@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300;1,500&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tauri&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegurar que el elemento de carga esté en la parte superior */
+}
+
+.loading img {
+    width: 100px; /* Tamaño de la imagen de carga */
+    height: auto;
+}
+
+/*  HEADER  👇  */
+
+.header__{
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+
+    border-bottom: 2px solid white;
+
+    background-color: #131B1E;
+}
+
+.div__header__pather{
+    display: flex;
+    justify-content: center;
+}
+
+.div__header__son{
+    display: flex;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-decoration: none;
+    color: black;
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-size: 1.20rem;
+
+    color: white;
+}
+
+.div__header__son:hover{
+    color: #40FFA3;
+}
+
+/*  HERO  👇  */
+
+.section__hero{
+    min-height: 77vh;
+    background-color: #40FFA3;
+
+    display: flex;
+    justify-content: center;
+}
+
+.div__hero__pather{
+    display: flex;
+    align-items: center;
+
+    width: 900px;
+}
+
+.div__hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+.img__hero{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+
+    border: 3.5px solid white;
+    border-radius: 60px;
+    background-color: black;
+}
+
+.div__elements{
+
+}
+
+.hero__tittle{
+    font-size: 4rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px #000; /* ancho y color del borde */
+    text-stroke: 1px #000; /* ancho y color del borde */
+}
+
+.hero__subtittle{
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    -webkit-text-stroke: 1px #ffffff; /* ancho y color del borde */
+    text-stroke: 1px #ffffff; /* ancho y color del borde */
+}
+
+.hero__paragraph{
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+
+    margin-top: 5px;
+}
+
+/*  ARROW  👇  */
+
+.section__arrow{
+    background-color: #40FFA3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    padding-bottom: 150px;
+}
+
+.bi-arrow-down{
+    font-size: 3rem;
+
+    transform: translateX(-50%);
+    animation-name: moverse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes moverse {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, 100%);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+
+/*  MY  👇  */
+
+.section__my{
+    min-height: 125vh;
+    background: #04100B;
+
+    display: flex;
+    justify-content: center;
+
+    background: rgb(28, 28, 28);
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.5); /* Desplazamiento vertical negativo */
+
+    padding-top: 100px;
+}
+
+.div__my__pather{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 900px;
+
+}
+
+.my__tittle{
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    color: rgb(255, 255, 255);
+
+    margin-bottom: 50px;
+
+    -webkit-text-stroke: 1px #000000; /* ancho y color del borde */
+    text-stroke: 1px #000000; /* ancho y color del borde */
+
+    display: flex;
+    justify-content: center;
+}
+
+.my__paragraph{
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+
+    margin-top: 10px;
+
+    color: rgb(233, 233, 233);
+}
+
+/* SKILLS */
+
+.div__section__skills{
+    padding-top: 100px;
+}
+
+.skills__tittle{
+    font-size: 2.30rem;
+    font-family: "Rubik", sans-serif;
+    color: rgb(255, 255, 255);
+
+    margin-bottom: 35px;
+
+    -webkit-text-stroke: 1px #000000; /* ancho y color del borde */
+    text-stroke: 1px #000000; /* ancho y color del borde */
+}
+
+.Skills__sections{
+    display: flex;
+    font-size: 1.50rem;
+    font-family: "Rubik", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.skills__div{
+    border: 2px solid #40FFA3;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    background-color: #04100B;
+    color: #40FFA3;
+}
+
+/* IDIOMA */
+
+.div__section__idioma{
+    padding-top: 100px;
+}
+
+.idioma__tittle{
+    font-size: 2.40rem;
+    font-family: "Rubik", sans-serif;
+    color: rgb(255, 255, 255);
+
+    margin-bottom: 35px;
+
+    -webkit-text-stroke: 1px #000000; /* ancho y color del borde */
+    text-stroke: 1px #000000; /* ancho y color del borde */
+}
+
+.idioma__sections{
+    display: flex;
+    font-size: 1.50rem;
+    font-family: "Rubik", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.idioma__div{
+    border: 2px solid #40FFA3;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    background-color: #04100B;
+    color: #40FFA3;
+}
+
+/* experiencia */
+
+.div__section__experiencia{
+    min-height: 80vh;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.box{
+    border: 2px solid #40FFA3;
+    border-radius: 15px;
+    background-color: #191f1d;
+
+    min-height: 210px;
+
+    box-shadow: 0px 10px 20px #40FFA3; /* Sombra blanca */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.bi-arrow-down-square{
+    color: white;
+    font-size: 3rem;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.box__fecha{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 1.40rem;
+
+    color: rgb(172, 18, 18);
+    font-family: "Rubik", sans-serif;
+
+    padding-top: 5px;
+}
+
+.box__page{
+    display: flex;
+    justify-content: center;
+
+    color: #40FFA3;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.20rem;
+
+    padding-top: 5px;
+}
+
+.box__descrip{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.15rem;
+
+    padding-top: 5px;
+}
+
+.img{
+    width: 100px;
+    padding-bottom: 10px;
+}
+
+/* Mi CBU */
+
+.my__cvu{
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.my__cvu__descrip{
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.8rem;
+    
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.a__pdf{
+
+}
+
+.pdf__tamanio{
+    width: 50px;
+    
+}
+
+/* CONTACTO */
+
+.div__section__contacto{
+    min-height: 65vh;
+
+    background-color: #40FFA3;
+    box-shadow: 0px -10px 20px #40FFA3; /* Desplazamiento vertical negativo */
+
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__descrip{
+    color: rgb(22, 22, 22);
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 900px;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    color: red;
+
+    padding-top: 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    color: red;
+
+    font-size: 3.20rem;
+    padding-top: 15px;
+}
+/* */
+
+.l__items {
+    position: fixed;
+    bottom: 5px;
+    right: 30px;
+    display: flex; /* Cambio a flexbox para alinear los elementos uno al lado del otro */
+}
+
+.p__item {
+    display: flex; /* Cambio a flexbox para alinear el texto y la imagen dentro del enlace */
+    align-items: center; /* Centra verticalmente los elementos dentro del enlace */
+    margin-right: 10px; /* Espacio entre los elementos (ajusta según sea necesario) */
+    /* Estilos para tus ítems (tamaño, color, etc.) */
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 1.40rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #131B1E;
+    padding: 3px;
+}
+
+.lenguage__item {
+    margin-right: 5px; /* Espacio entre el texto y la bandera (ajusta según sea necesario) */
+}
+
+.flag {
+    width: 35px;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+
+    color: rgb(255, 255, 255);
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+
+    background-color:#04100B;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.footer__son{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-right: 5px;
+    padding-left: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.redes__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-github{
+    color: white;
+}
+
+.bi-linkedin{
+    color: white;
+}
+
+/* Media quaries */
+@media (max-width:1000px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 700px;
+    }
+
+    .div__my__pather {
+        width: 700px;
+    }
+
+    .contacto__descrip {
+        width: 700px;
+    }
+}
+
+@media (max-width:850px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 700px;
+    }
+
+    .div__my__pather {
+        width: 700px;
+    }
+
+    .contacto__descrip {
+        width: 700px;
+    }
+}
+
+@media (max-width:700px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 600px;
+    }
+
+    .div__my__pather {
+        width: 600px;
+    }
+
+    .idioma__tittle {
+        font-size: 2.10rem;
+    }
+
+    .skills__tittle {
+        font-size: 2.10rem;
+    }
+
+    .wordpress__tittle {
+        font-size: 2.10rem;
+    }
+
+    .contacto__descrip {
+        width: 550px;
+    }
+}
+
+@media (max-width:625px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 600px;
+    }
+
+    .div__hero__pather{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div__hero {
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+
+
+    .div__elements {
+        text-align: center;
+    }
+
+    .div__my__pather {
+        width: 500px;
+    }
+
+    .skills__tittle {
+        font-size: 1.80rem;
+    }
+
+    .idioma__tittle {
+        font-size: 1.80rem;
+    }
+
+    .wordpress__tittle {
+        font-size: 1.80rem;
+    }
+
+    .contacto__descrip {
+        width: 550px;
+    }
+}
+
+@media (max-width:560px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 440px;
+    }
+
+    .div__hero__pather{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div__elements {
+        text-align: center;
+        width: 440;
+    }
+
+    .div__my__pather {
+        width: 430px;
+    }
+
+    .Skills__sections {
+        display: flex;
+        justify-content: center;
+        font-size: 1.20rem;
+        font-family: "Rubik", sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline-table;
+    }
+
+    .contacto__descrip {
+        width: 430px;
+    }
+
+    .l__items {
+        bottom: 55px;
+    }
+}
+
+@media (max-width:420px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 490px;
+    }
+
+    .div__header__pather {
+        font-size: 1.10rem;
+    }
+
+    .div__header__son {
+        font-size: 1.10rem;
+    }
+
+    .div__hero__pather{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div__hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+
+    .div__my__pather {
+        width: 350px;
+    }
+
+    .my__tittle {
+        font-size: 2.50rem;
+    }
+
+    .Skills__sections {
+        display: flex;
+        justify-content: center;
+        font-size: 1.20rem;
+        font-family: "Rubik", sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline-table;
+    }
+
+    .contacto__descrip {
+        width: 350px;
+    }
+
+    .l__items {
+        bottom: 55px;
+    }
+}
+
+
+@media (max-width:375px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .div__header__son {
+        font-size: 1.10rem;
+    }
+
+    .div__hero__pather{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div__hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+
+    .div__my__pather {
+        width: 310px;
+    }
+
+    .my__tittle {
+        font-size: 2.20rem;
+    }
+
+    .hero__tittle {
+        font-size: 3.50rem;
+    }
+
+    .Skills__sections {
+        display: flex;
+        justify-content: center;
+        font-size: 1.20rem;
+        font-family: "Rubik", sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline-table;
+    }
+
+    .contacto__descrip {
+        width: 310px;
+    }
+
+    .l__items {
+        bottom: 55px;
+    }
+}
+
+@media (max-width:320px){
+
+    .div__header__pather {
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+
+    .div__hero__pather{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div__hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+
+    .div__my__pather {
+        width: 290px;
+    }
+
+    .my__tittle {
+        font-size: 2.50rem;
+    }
+
+    .Skills__sections {
+        display: flex;
+        justify-content: center;
+        font-size: 1.20rem;
+        font-family: "Rubik", sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline-table;
+    }
+
+    .contacto__descrip {
+        width: 290px;
+    }
+
+    .l__items {
+        bottom: 55px;
+    }
+}
+
+
+
