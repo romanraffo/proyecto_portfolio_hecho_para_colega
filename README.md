@@ -1,4 +1,4 @@
-###Portfolio para "cliente".
+PORTFOLIO PARA "CLIENTE".
 
 - Este proyecto fue realizado con HTML, CSS, Bootstrap y Javascript.
 
